@@ -1,0 +1,17 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './App.css';
+import {Provider} from 'react-redux'
+import store from './store'
+import App from './App';
+import Mediator from './mediator'
+
+//import reportWebVitals from './reportWebVitals';
+ReactDOM.render(
+  <Provider store={store}>
+    <Mediator/>
+  </Provider>,
+  document.getElementById('root')
+);
+
+
